@@ -1,0 +1,105 @@
+/* 
+
+  Breake Points (Putos de Quiebre)
+
+  Son los valores especificos del ancho de pantalla donde cambia el diseño del sitio web para adaptarse mejor a las dimensiones del dispositivo.
+
+  Ayudan a definir los estilos mediante los media queries. Tradicionalmente, los breake points se define segun categorias comunes de los dispositivos.
+
+  Basandonos en los dispositivos: :after
+
+    - Moviles pequeños: de 320px - 479px Ancho de pantalla
+    - Moviles: de 480px a 767px Ancho de pantalla
+    - Tabletas: de 768px - 1023px Ancho de pantalla
+    - Escritorio: de 1024 - 1279px Ancho de pantalla
+    - Pantallas grandes: de 1280px - superiores ancho de pantalla.
+
+
+*/
+
+/*  */
+
+
+body {
+  background-color: brown;
+}
+
+/* Tablets con min-width: 468px */
+
+@media screen and (min-width: 468px) {
+  body {
+    background-color: blueviolet;
+}
+}
+
+/* Tablets con min-width: 768px */
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: cadetblue;
+}
+}
+
+/* Escritorio min-width: 1024px */
+
+@media screen and (min-width: 1024px) {
+  body {
+    background-color: darkcyan;
+}
+}
+
+/* Pantallas Grandes min-width: 1280px */
+
+@media screen and (min-width: 1280px) {
+  body {
+    background-color: darkslateblue;
+}
+}
+
+
+/* Desktop First - Breake Points */
+
+/* Definimos los estilos base para pantallas grandes 1280px y superiores */
+
+h1 {
+  font-size: 5rem;
+  color: white;
+}
+
+/* Escritorio con max-width: 1279 */
+
+@media screen and (max-width: 1279px) {
+  h1 {
+    font-size: 4rem;
+    color: violet;
+  }
+}
+
+/* Tablets con max-width: 1023 */
+
+@media screen and (max-width: 1023px) {
+  h1 {
+    font-size: 8rem;
+    color: darkorange;
+  }
+}
+
+/* Moviles Medianos con max-width: 767 */
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 2rem;
+    color: turquoise;
+  }
+}
+
+/* Moviles Pequeños con max-width: 479px */
+
+@media screen and (max-width: 479px) {
+  h1 {
+    font-size: 10rem;
+    color: black;
+  }
+}
+
+commit: break points
